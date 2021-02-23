@@ -6,14 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="303dp"
-        android:layout_height="230dp"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="85dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -21,5 +13,42 @@
         android:text="TextView"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="45dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="348dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrolling for tags"
+        android:layout_width="333dp"
+        android:layout_height="144dp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="522dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </HorizontalScrollView>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="243dp"
+        android:layout_height="49dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="352dp"
+        android:layout_height="234dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="82dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
